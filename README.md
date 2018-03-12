@@ -1,7 +1,7 @@
 # wanandroid
 由鸿洋的wanandroid网站以及开放的api开发的Android项目
 # **apk**
-[app-release.apk](https://github.com/mKunio/wanandroid/tree/master/app/release/app-release.apk)
+[app-release.apk](https://github.com//mKunio/wanandroid/raw/master/app/release/app-release.apk)
 # **效果图**
 ![wanandroid1](https://raw.githubusercontent.com/wiki/mKunio/wanandroid/wanandroidclient1.png)
 ![wanandroid2](https://raw.githubusercontent.com/wiki/mKunio/wanandroid/wanandroidclient2.png)
