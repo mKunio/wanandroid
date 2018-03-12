@@ -9,8 +9,8 @@
 ![wanandroid6](https://raw.githubusercontent.com/wiki/mKunio/wanandroid/wanandroidclient6.png)
 
 # **感谢**
-[visist it](https://github.com/salecoding/WanAndroid)
-[visist it](https://github.com/wangzailfm/WanAndroidClient)
+[salecoding/WanAndroid](https://github.com/salecoding/WanAndroid)<br>
+[wangzailfm/WanAndroidClient](https://github.com/wangzailfm/WanAndroidClient)
 感谢二位的项目在我开发学习的过程中提供的帮助!十分感谢!
 # **声明**
-该项目仅供学习讨论使用，操作性功能目前只有收藏站内文章，其他收藏站外文章等由于新项目的启动无法继续完成
+该项目仅供学习讨论使用，操作性功能目前只有收藏站内文章，其他收藏站外文章等由于新项目的启动会被搁置
