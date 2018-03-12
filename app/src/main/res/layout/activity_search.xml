@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/c4">
+
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:hint="支持多个关键词，用空格隔开:"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/c0"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:textSize="@dimen/t5" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/left_back" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/search_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

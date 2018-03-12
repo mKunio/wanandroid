@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/error_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4"
+    android:clickable="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/network_error" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:lineSpacingExtra="15dp"
+        android:text="网络好像出错了，请检查您的网络连接\n 点击屏幕重新加载"
+        android:textColor="@color/c6"
+        android:textSize="@dimen/t4" />
+
+</LinearLayout>

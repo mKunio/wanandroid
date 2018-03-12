@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/swipe_layout"
+    android:layout_height="match_parent">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/c4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:text="Hot"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="2dp"
+                    android:src="@drawable/left_back" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_all_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="10dp"
+                android:text="大家都在搜"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/t2" />
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:background="@color/c9"
+                android:id="@+id/all_search_flow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_usual_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="10dp"
+                android:text="常用网站"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/t2" />
+
+            <com.zhy.view.flowlayout.FlowLayout
+                android:background="@color/c9"
+                android:id="@+id/usual_use_flow_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--APP内部色调-->
+    <color name="c1">#1296db</color>
+    <color name="c2">#848484</color>
+    <color name="c3">#b6b6b6</color>
+    <color name="c4">#E60012</color>
+    <color name="c5">#ECECEC</color>
+    <color name="c6">#666</color>
+    <color name="c7">#4a4a4a</color>
+    <color name="c8">#0E101F</color>
+    <color name="c9">#ECECEC</color>
+    <color name="c0">#AAFFFFFF</color>
+</resources>
