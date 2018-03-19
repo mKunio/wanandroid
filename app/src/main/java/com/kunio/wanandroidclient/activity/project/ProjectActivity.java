@@ -126,7 +126,9 @@ public class ProjectActivity extends BaseActivity implements ProjectContract.Vie
 
     @Override
     public void loadMoreComplete() {
-        recyclerView.setLoadMoreResultCompleted();
+        if (recyclerView.getAdapter()!=null) {
+            recyclerView.setLoadMoreResultCompleted();
+        }
     }
 
     @Override

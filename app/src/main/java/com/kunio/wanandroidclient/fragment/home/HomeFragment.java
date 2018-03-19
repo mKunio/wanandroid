@@ -190,7 +190,9 @@ public class HomeFragment extends Fragment implements HomeContract.View,
 
     @Override
     public void showLoadMoreComplete() {
-        recyclerView.setLoadMoreResultCompleted();
+        if (recyclerView.getAdapter()!=null) {
+            recyclerView.setLoadMoreResultCompleted();
+        }
     }
 
     @Override

@@ -127,7 +127,9 @@ public class MyCollectActivity extends BaseActivity implements CollectContract.V
 
     @Override
     public void showLoadMoreCompleteView() {
-        recyclerView.setLoadMoreResultCompleted();
+        if (recyclerView.getAdapter()!=null) {
+            recyclerView.setLoadMoreResultCompleted();
+        }
     }
 
     @Override

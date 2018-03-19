@@ -29,6 +29,7 @@ public class KnowledgePresenter implements KnowledgeContract.Presenter {
     @Override
     public void loadData(int cid) {
         view.showLoading();
+        view.showLoadMoreCompleteView();
         model.loadData(cid, new Callback<Article>() {
             @Override
             public void onSuccess(Article result) {

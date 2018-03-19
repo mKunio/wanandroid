@@ -26,6 +26,7 @@ public class CollectPresenter implements CollectContract.Presenter {
     @Override
     public void loadData() {
         view.showLoading();
+        view.showLoadMoreCompleteView();
         model.loadData(new Callback<Article>() {
             @Override
             public void onSuccess(Article result) {
