@@ -93,6 +93,7 @@ public class MyCollectActivity extends BaseActivity implements CollectContract.V
 
     @Override
     public void addArticle(Article article) {
+        currentPage = article.getData().getCurPage();
         HeaderAndFooterRecyclerViewAdapter adapter = (HeaderAndFooterRecyclerViewAdapter) recyclerView.getAdapter();
         ArticleAdapter innerAdapter = (ArticleAdapter) adapter.getInnerAdapter();
         innerAdapter.addArticle(article.getData().getDatas());

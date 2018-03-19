@@ -62,6 +62,10 @@ public class CollectPresenter implements CollectContract.Presenter {
             public void onSuccess(Article result) {
                 if (view != null) {
                     List<Article.DataBean.DatasBean> datas = result.getData().getDatas();
+                    for (Article.DataBean.DatasBean data : datas) {
+                        // 收藏文章列表默认都是红心
+                        data.setCollect(true);
+                    }
                     view.showLoadMoreCompleteView();
                     if (datas.size() > 0) {
                         view.addArticle(result);
