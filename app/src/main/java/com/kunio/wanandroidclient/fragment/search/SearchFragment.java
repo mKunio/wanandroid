@@ -2,7 +2,7 @@ package com.kunio.wanandroidclient.fragment.search;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.kunio.wanandroidclient.activity.search.SearchActivity;
 import com.kunio.wanandroidclient.base.SimpleViewFragment;

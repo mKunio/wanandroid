@@ -2,7 +2,7 @@ package com.kunio.wanandroidclient.fragment.knowledge;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.kunio.wanandroidclient.base.SimpleViewFragment;
 import com.kunio.wanandroidclient.bean.Article;

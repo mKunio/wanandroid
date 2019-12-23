@@ -1,7 +1,7 @@
 package com.kunio.wanandroidclient.fragment.system;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,8 +14,6 @@ import com.kunio.wanandroidclient.util.DensityUtils;
 import com.zhy.view.flowlayout.FlowLayout;
 
 import java.util.List;
-
-import butterknife.BindView;
 
 /**
  * Created by zhc on 2018/3/7 0007.

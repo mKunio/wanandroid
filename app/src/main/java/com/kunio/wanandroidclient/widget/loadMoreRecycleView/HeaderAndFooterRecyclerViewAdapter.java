@@ -1,17 +1,12 @@
 package com.kunio.wanandroidclient.widget.loadMoreRecycleView;
 
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.StaggeredGridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
 
-/**
- * Created by zhong on 2016/4/9.
- * <p>
- * RecyclerView.Adapter with Header and Footer
- */
 public class HeaderAndFooterRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private static final int TYPE_HEADER_VIEW = Integer.MIN_VALUE;

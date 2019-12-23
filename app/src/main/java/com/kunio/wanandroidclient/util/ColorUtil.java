@@ -1,9 +1,8 @@
 package com.kunio.wanandroidclient.util;
 
 import android.content.Context;
-import android.graphics.BitmapRegionDecoder;
 import android.graphics.Color;
-import android.support.annotation.ColorRes;
+import androidx.annotation.ColorRes;
 
 /**
  * Created by zhc on 2018/3/5 0005.

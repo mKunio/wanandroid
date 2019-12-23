@@ -1,5 +1,8 @@
 package com.kunio.wanandroidclient.http;
 
+import androidx.annotation.NonNull;
+
+import com.facebook.stetho.okhttp3.StethoInterceptor;
 import com.kunio.wanandroidclient.util.SharedPreUtil;
 
 import java.io.IOException;
@@ -12,8 +15,6 @@ import okhttp3.Cookie;
 import okhttp3.CookieJar;
 import okhttp3.HttpUrl;
 import okhttp3.OkHttpClient;
-import okhttp3.Request;
-import okhttp3.Response;
 import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
@@ -26,12 +27,12 @@ public class RetrofitFactory {
     private static OkHttpClient client = new OkHttpClient.Builder()
             .cookieJar(new CookieJar() {
                 @Override
-                public void saveFromResponse(HttpUrl url, List<Cookie> cookies) {
+                public void saveFromResponse(@NonNull HttpUrl url, @NonNull List<Cookie> cookies) {
                     // 当只有登陆的请求会重新存储cookie，利用拦截器判断登陆请求，在拦截器中存储，此处不存储
                 }
 
                 @Override
-                public List<Cookie> loadForRequest(HttpUrl url) {
+                public List<Cookie> loadForRequest(@NonNull HttpUrl url) {
                     Set<String> cookies = SharedPreUtil.getCookies(url);
                     List<Cookie> cookie = new ArrayList<>();
                     for (String s : cookies) {
@@ -41,10 +42,11 @@ public class RetrofitFactory {
                 }
             })
             .addInterceptor(new SaveCookiesInterceptor())
+            .addNetworkInterceptor(new StethoInterceptor())
             .build();
     private static Retrofit retrofit = new Retrofit.Builder()
             .client(client)
-            .baseUrl("http://www.wanandroid.com/")
+            .baseUrl("https://www.wanandroid.com/")
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .build();

@@ -5,6 +5,8 @@ import android.app.Application;
 import android.content.Context;
 import android.os.Bundle;
 
+import com.facebook.stetho.Stetho;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -21,6 +23,7 @@ public class AndroidApplication extends Application implements Application.Activ
         super.onCreate();
         context = getApplicationContext();
         registerActivityLifecycleCallbacks(this);
+        Stetho.initializeWithDefaults(this);
     }
 
     public static Context getContext() {
